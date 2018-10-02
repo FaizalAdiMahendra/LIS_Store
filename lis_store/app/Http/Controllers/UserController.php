@@ -55,7 +55,6 @@ class UserController extends Controller
 
     public function logout(Request $request)
 {
-    $this->performLogout($request);
-    return redirect()->route('product.index');
+    return redirect()->route('product.index')->with(Auth::logout());
 }
 }
