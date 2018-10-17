@@ -6,12 +6,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Auth;
 use App\User;
+use DB;
 
 class UserController extends Controller
 {
     public function getSignup() {
     	return view('user.signup');
     }
+
+   
 
     public function postSignup(Request $request) {
     	$this->validate($request, [
@@ -26,6 +29,8 @@ class UserController extends Controller
     	$user->save();
 
         Auth::login($user);
+
+
 
     	return redirect()->route('user.profile');
 
@@ -53,8 +58,8 @@ class UserController extends Controller
         return view('user.profile');
     }
 
-    public function logout(Request $request)
-{
+    
+    public function logout(Request $request){
     return redirect()->route('product.index')->with(Auth::logout());
 }
 }

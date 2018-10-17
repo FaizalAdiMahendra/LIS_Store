@@ -71,10 +71,26 @@ Route::group(['prefix' => 'user'], function(){
 		'as' => 'user.profile'
 		]);
 
+
+
 		Route::get('/logout',[
 		'uses' => 'UserController@logout',
 		'as' => 'user.logout'
 		]);
 	});
+
+	
 });
+
+Route::group(['middleware' => 'auth'], function(){
+	
+	Route::get('product.index','UserController@index');
+});
+
+Route::get('/payment',function(){
+		return view('shop.payment');
+	});
+
+Route::post('/charge','ProductController@charge');
+	
 

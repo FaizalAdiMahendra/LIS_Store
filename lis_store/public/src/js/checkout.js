@@ -16,18 +16,19 @@ $form.submit(function(event){
     return false;
 });
 
-function stripeResponseHandler(status, respomse){
-if (response){
+function stripeResponseHandler(status, response){
+    
+if (response.error){
     $('#charge-error').removeClass('hidden');
     $('#charge-error').text (response.error.message);
-    $form.find('button').prop('disable', false);
+    $form.find('button').prop('disabled', false);
 
 } else {
-    var token = response.id;
-    $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+        var token = response.id;
+        $form.append($('<input type="hidden" name="stripeToken" />').val(token));
 
     //submit
-    $form.get(0).submit();
+        $form.get(0).submit();
 }
 
 }
