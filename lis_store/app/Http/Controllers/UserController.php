@@ -32,7 +32,7 @@ class UserController extends Controller
 
 
 
-    	return redirect()->route('user.profile');
+    	return redirect()->route('user.index');
 
 
     }
@@ -49,15 +49,12 @@ class UserController extends Controller
 
         if (Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')])){
     
-            return redirect()->route('user.profile');
+            return redirect()->route('product.index');
         }
         return redirect()->back();
     }
 
-    public function getProfile() {
-        return view('user.profile');
-    }
-
+   
     
     public function logout(Request $request){
     return redirect()->route('product.index')->with(Auth::logout());

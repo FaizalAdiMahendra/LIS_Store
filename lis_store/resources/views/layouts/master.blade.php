@@ -18,10 +18,12 @@
 </head>
 <body class="text-center">
 @include('partials.header')
-@include('partials.header2')
+@yield('header')
+
 <div class= 'container'>
 @yield('content')
 </div>
+@yield('comment')
 @yield('partials.footer')
 @yield('scripts')
 <script type="text/javascript" src="{{URL::to('js/clean-blog.min.js')}}"></script>

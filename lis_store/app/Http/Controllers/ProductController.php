@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Session;
 use App\Cart;
 use App\Product;
@@ -11,6 +12,7 @@ use Stripe\Stripe;
 use Stripe\Charge;
 use Stripe\Customer;
 use Auth;
+
 
 class ProductController extends Controller
 {
@@ -120,4 +122,9 @@ class ProductController extends Controller
     return $ex->getMessage();
     }
     }
+
+    
+
+     
+
 }

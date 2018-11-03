@@ -12,7 +12,7 @@
 */
 
 Route::get('/', [
-    'uses' => 'ProductCOntroller@getIndex',
+    'uses' => 'ProductController@getIndex',
     'as' => 'product.index'
 ]);
 
@@ -67,7 +67,7 @@ Route::group(['prefix' => 'user'], function(){
 	Route::group(['middleware' => 'auth'], function(){
 
 		Route::get('/profile', [
-		'uses' =>'UserController@getProfile',
+		'uses' =>'ProductController@getProfile',
 		'as' => 'user.profile'
 		]);
 

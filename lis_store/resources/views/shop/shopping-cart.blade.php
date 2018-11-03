@@ -1,5 +1,23 @@
 @extends('layouts.master', ['title' => 'Shopping cart'])
 
+@section('header')
+<header class="masthead" style="background-image: url('images/Checckout.png')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Lis Store</h1>
+              <span class="subheading">Thank for use our service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+@endsection
+
+
 
 @section('link')
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet"/>
@@ -56,7 +74,7 @@
                     data-amount={{$totalPrice * 100}}
                     data-name="LIS STORE"
                     data-description="Online course about integrating Stripe"
-                    data-image="{{images/logo_lis.jpg}}
+                    data-image=""
                     data-locale="auto"
                     data-currency="usd">
 					</script>

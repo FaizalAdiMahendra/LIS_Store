@@ -10,4 +10,6 @@ class Order extends Model
     public function user() {
         return $this ->belongsTo('App\User');
     }
+
+    protected $fillable= ['user_id','address','cart','name','city','country','zip_code','tel','paymant_id'];
 }

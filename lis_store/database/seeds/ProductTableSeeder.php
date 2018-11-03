@@ -12,47 +12,127 @@ class ProductTableSeeder extends Seeder
     public function run()
     {
         $product = new \App\Product([
-            'imagePath' => 'images/harry_potter.jpg',
-            'title' => 'Harry Potter',
-            'description' => 'BOring',
-            'price' => 70000,
-            'typeProduct' => 'book'
+            'imagePath' => 'images/Athena_alezander_Target.jpg',
+            'title' => 'Athena alezander',
+            'description' => 'Women heels with elegant feature',
+            'price' => 85,
+            'typeProduct' => 'Heels'
         ]);
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/HP 250 G5 i5 Laptop 2SY46ES.jpg',
-            'title' => 'HP 250 G5 i5 Laptop 2SY46ES',
-            'description' => 'Laptop lenofo generasi 5 yang murah',
-            'price' => 4000000,
-            'typeProduct' => 'electronic'
+            'imagePath' => 'images/Camper.jpg',
+            'title' => 'Camper',
+            'description' => 'good boots ideal for camping',
+            'price' => 95,
+            'typeProduct' => 'Boots'
         ]);
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/Lenovo 330-15IGM 15.6.jpg',
-            'title' => 'Lenovo 330-15IGM 15.6',
-            'description' => 'laptop lenovo generasi terbaru',
-            'price' => 3700000,
-            'typeProduct' => 'electronic'
+            'imagePath' => 'images/Cobian_las_olas.jpg',
+            'title' => 'Cobian las olas',
+            'description' => 'sandals high quality with cobian Brands',
+            'price' => 50,
+            'typeProduct' => 'Sandals'
         ]);
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/ReZero starting live.jpg',
-            'title' => 'ReZero starting live',
-            'description' => 'light novel jepang re zero',
-            'price' => 60000,
-            'typeProduct' => 'book'
+            'imagePath' => 'images/Columbia_ice_maiden.jpg',
+            'title' => 'Columbia ice maiden',
+            'description' => 'good boots for winter such pretty design',
+            'price' => 80,
+            'typeProduct' => 'Boots'
         ]);
         $product->save();
 
         $product = new \App\Product([
-            'imagePath' => 'images/Apple iPhone 6S (Gold, 32GB).jpg',
-            'title' => 'Apple iPhone 6S (Gold, 32GB)',
-            'description' => 'new iPhone 6s dengan harga murah',
-            'price' => 3000000,
-            'typeProduct' => 'electronic'
+            'imagePath' => 'images/Fresh foam Gobi.jpg',
+            'title' => 'Fresh foam Gobi',
+            'description' => 'sport sneaker ideal for play bassketball',
+            'price' => 100,
+            'typeProduct' => 'Sneaker'
+        ]);
+        $product->save();
+
+        
+        $product = new \App\Product([
+            'imagePath' => 'images/Jessica_simpson_stargaze.jpg',
+            'title' => 'Jessica simpson stargaze',
+            'description' => 'Higt Heels for elegant women',
+            'price' => 95,
+            'typeProduct' => 'Heels'
+        ]);
+        $product->save();
+
+        
+        $product = new \App\Product([
+            'imagePath' => 'images/Merrell Alverstone.jpg',
+            'title' => 'Merrell Alverstone',
+            'description' => 'ideal shoes for highking in mountain',
+            'price' => 150,
+            'typeProduct' => 'Sneaker'
+        ]);
+        $product->save();
+
+        
+        $product = new \App\Product([
+            'imagePath' => 'images/Miz_mooz_Natick.jpg',
+            'title' => 'Miz mooz Natick',
+            'description' => 'boots like old west movie',
+            'price' => 145,
+            'typeProduct' => 'Boots'
+        ]);
+        $product->save();
+
+        
+        $product = new \App\Product([
+            'imagePath' => 'images/Roxy_Tahiti.jpg',
+            'title' => 'Roxy Tahiti',
+            'description' => 'Sandals with Roxy brands',
+            'price' => 45,
+            'typeProduct' => 'Sandals'
+        ]);
+        $product->save();
+
+        
+        $product = new \App\Product([
+            'imagePath' => 'images/Sperry Gold Milbrige Nubuck.jpg',
+            'title' => 'Sperry Gold Milbrige Nubuck',
+            'description' => 'sneaker ideal for college student',
+            'price' => 80,
+            'typeProduct' => 'Sneaker'
+        ]);
+        $product->save();
+
+        
+        $product = new \App\Product([
+            'imagePath' => 'images/Steve Madden Nyles.jpg',
+            'title' => 'Steve Madden Nyles',
+            'description' => 'Shoes for Office work',
+            'price' => 100,
+            'typeProduct' => 'Shoes'
+        ]);
+        $product->save();
+
+        
+        $product = new \App\Product([
+            'imagePath' => 'images/swallows-sandals.jpg',
+            'title' => 'swallows sandals',
+            'description' => 'cheap Swallow Sandals',
+            'price' => 15,
+            'typeProduct' => 'Sandals'
+        ]);
+        $product->save();
+
+        
+        $product = new \App\Product([
+            'imagePath' => 'images/Vaneli Tedra.jpg',
+            'title' => 'Vaneli Tedra.jpg',
+            'description' => 'Red Higt Heels with elegant design',
+            'price' => 95,
+            'typeProduct' => 'Heels'
         ]);
         $product->save();
     }
